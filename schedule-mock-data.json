@@ -1,0 +1,436 @@
+{
+  "meta": {
+    "title": "University Schedule Drag & Drop Mock Data",
+    "version": 1,
+    "weekDays": [
+      {
+        "id": "MON",
+        "label": "Понедельник"
+      },
+      {
+        "id": "TUE",
+        "label": "Вторник"
+      },
+      {
+        "id": "WED",
+        "label": "Среда"
+      },
+      {
+        "id": "THU",
+        "label": "Четверг"
+      },
+      {
+        "id": "FRI",
+        "label": "Пятница"
+      }
+    ]
+  },
+  "timeSlots": [
+    {
+      "id": "SLOT_0830",
+      "start": "08:30",
+      "end": "09:50"
+    },
+    {
+      "id": "SLOT_1000",
+      "start": "10:00",
+      "end": "11:20"
+    },
+    {
+      "id": "SLOT_1130",
+      "start": "11:30",
+      "end": "12:50"
+    },
+    {
+      "id": "SLOT_1300",
+      "start": "13:00",
+      "end": "14:20"
+    },
+    {
+      "id": "SLOT_1430",
+      "start": "14:30",
+      "end": "15:50"
+    },
+    {
+      "id": "SLOT_1600",
+      "start": "16:00",
+      "end": "17:20"
+    }
+  ],
+  "courses": [
+    {
+      "id": "C_CS101",
+      "code": "CS101",
+      "name": "Основы программирования"
+    },
+    {
+      "id": "C_CS205",
+      "code": "CS205",
+      "name": "Алгоритмы и структуры данных"
+    },
+    {
+      "id": "C_DB202",
+      "code": "DB202",
+      "name": "Базы данных"
+    },
+    {
+      "id": "C_MATH201",
+      "code": "MATH201",
+      "name": "Дискретная математика"
+    },
+    {
+      "id": "C_MATH101",
+      "code": "MATH101",
+      "name": "Математический анализ"
+    },
+    {
+      "id": "C_ENG110",
+      "code": "ENG110",
+      "name": "Академический английский"
+    },
+    {
+      "id": "C_PHY150",
+      "code": "PHY150",
+      "name": "Физика"
+    },
+    {
+      "id": "C_HIS120",
+      "code": "HIS120",
+      "name": "История Центральной Азии"
+    },
+    {
+      "id": "C_AI310",
+      "code": "AI310",
+      "name": "Введение в искусственный интеллект"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "T1",
+      "name": "Александр Иванов",
+      "shortName": "А. Иванов"
+    },
+    {
+      "id": "T2",
+      "name": "Динара Абдраева",
+      "shortName": "Д. Абдраева"
+    },
+    {
+      "id": "T3",
+      "name": "Марат Садыков",
+      "shortName": "М. Садыков"
+    },
+    {
+      "id": "T4",
+      "name": "Елена Петрова",
+      "shortName": "Е. Петрова"
+    },
+    {
+      "id": "T5",
+      "name": "Айжан Токтогулова",
+      "shortName": "А. Токтогулова"
+    },
+    {
+      "id": "T6",
+      "name": "Руслан Ким",
+      "shortName": "Р. Ким"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "R101",
+      "name": "A-101",
+      "capacity": 20,
+      "type": "LECTURE"
+    },
+    {
+      "id": "R102",
+      "name": "A-102",
+      "capacity": 25,
+      "type": "LECTURE"
+    },
+    {
+      "id": "R201",
+      "name": "B-201",
+      "capacity": 30,
+      "type": "LECTURE"
+    },
+    {
+      "id": "R301",
+      "name": "B-301",
+      "capacity": 40,
+      "type": "LECTURE"
+    },
+    {
+      "id": "LAB1",
+      "name": "LAB-1",
+      "capacity": 18,
+      "type": "COMPUTER_LAB"
+    },
+    {
+      "id": "HALL1",
+      "name": "Hall-1",
+      "capacity": 60,
+      "type": "LECTURE"
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC_CS101_01",
+      "courseId": "C_CS101",
+      "code": "CS101-01",
+      "studentsCount": 24,
+      "requiredLessonsPerWeek": 3,
+      "teacherId": "T1",
+      "allowedTeacherIds": [
+        "T1",
+        "T2"
+      ],
+      "preferredRoomType": "COMPUTER_LAB"
+    },
+    {
+      "id": "SEC_CS101_02",
+      "courseId": "C_CS101",
+      "code": "CS101-02",
+      "studentsCount": 32,
+      "requiredLessonsPerWeek": 3,
+      "teacherId": "T2",
+      "allowedTeacherIds": [
+        "T1",
+        "T2"
+      ],
+      "preferredRoomType": "LECTURE"
+    },
+    {
+      "id": "SEC_MATH201_01",
+      "courseId": "C_MATH201",
+      "code": "MATH201-01",
+      "studentsCount": 28,
+      "requiredLessonsPerWeek": 2,
+      "teacherId": "T3",
+      "allowedTeacherIds": [
+        "T3"
+      ],
+      "preferredRoomType": "LECTURE"
+    },
+    {
+      "id": "SEC_DB202_01",
+      "courseId": "C_DB202",
+      "code": "DB202-01",
+      "studentsCount": 18,
+      "requiredLessonsPerWeek": 2,
+      "teacherId": "T4",
+      "allowedTeacherIds": [
+        "T1",
+        "T4"
+      ],
+      "preferredRoomType": "COMPUTER_LAB"
+    },
+    {
+      "id": "SEC_ENG110_01",
+      "courseId": "C_ENG110",
+      "code": "ENG110-01",
+      "studentsCount": 20,
+      "requiredLessonsPerWeek": 2,
+      "teacherId": "T5",
+      "allowedTeacherIds": [
+        "T5"
+      ],
+      "preferredRoomType": "LECTURE"
+    },
+    {
+      "id": "SEC_PHY150_01",
+      "courseId": "C_PHY150",
+      "code": "PHY150-01",
+      "studentsCount": 35,
+      "requiredLessonsPerWeek": 2,
+      "teacherId": "T6",
+      "allowedTeacherIds": [
+        "T6"
+      ],
+      "preferredRoomType": "LECTURE"
+    },
+    {
+      "id": "SEC_CS205_01",
+      "courseId": "C_CS205",
+      "code": "CS205-01",
+      "studentsCount": 16,
+      "requiredLessonsPerWeek": 2,
+      "teacherId": "T1",
+      "allowedTeacherIds": [
+        "T1",
+        "T4"
+      ],
+      "preferredRoomType": "COMPUTER_LAB"
+    },
+    {
+      "id": "SEC_MATH101_02",
+      "courseId": "C_MATH101",
+      "code": "MATH101-02",
+      "studentsCount": 22,
+      "requiredLessonsPerWeek": 3,
+      "teacherId": "T3",
+      "allowedTeacherIds": [
+        "T3"
+      ],
+      "preferredRoomType": "LECTURE"
+    },
+    {
+      "id": "SEC_HIS120_01",
+      "courseId": "C_HIS120",
+      "code": "HIS120-01",
+      "studentsCount": 38,
+      "requiredLessonsPerWeek": 2,
+      "teacherId": "T5",
+      "allowedTeacherIds": [
+        "T5"
+      ],
+      "preferredRoomType": "LECTURE"
+    },
+    {
+      "id": "SEC_AI310_01",
+      "courseId": "C_AI310",
+      "code": "AI310-01",
+      "studentsCount": 14,
+      "requiredLessonsPerWeek": 2,
+      "teacherId": null,
+      "allowedTeacherIds": [
+        "T1",
+        "T4"
+      ],
+      "preferredRoomType": "COMPUTER_LAB"
+    }
+  ],
+  "teacherBlockedSlots": [
+    {
+      "teacherId": "T1",
+      "day": "FRI",
+      "timeSlotId": "SLOT_1600",
+      "reason": "Недоступен"
+    },
+    {
+      "teacherId": "T2",
+      "day": "TUE",
+      "timeSlotId": "SLOT_0830",
+      "reason": "Недоступен"
+    },
+    {
+      "teacherId": "T2",
+      "day": "FRI",
+      "timeSlotId": "SLOT_1300",
+      "reason": "Недоступен"
+    },
+    {
+      "teacherId": "T3",
+      "day": "MON",
+      "timeSlotId": "SLOT_0830",
+      "reason": "Недоступен"
+    },
+    {
+      "teacherId": "T3",
+      "day": "WED",
+      "timeSlotId": "SLOT_1300",
+      "reason": "Недоступен"
+    },
+    {
+      "teacherId": "T4",
+      "day": "THU",
+      "timeSlotId": "SLOT_1430",
+      "reason": "Недоступен"
+    },
+    {
+      "teacherId": "T5",
+      "day": "MON",
+      "timeSlotId": "SLOT_1300",
+      "reason": "Недоступен"
+    },
+    {
+      "teacherId": "T6",
+      "day": "WED",
+      "timeSlotId": "SLOT_1130",
+      "reason": "Недоступен"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L1",
+      "sectionId": "SEC_CS101_01",
+      "teacherId": "T1",
+      "roomId": "R201",
+      "day": "MON",
+      "timeSlotId": "SLOT_0830"
+    },
+    {
+      "id": "L2",
+      "sectionId": "SEC_CS101_01",
+      "teacherId": "T1",
+      "roomId": "R201",
+      "day": "WED",
+      "timeSlotId": "SLOT_1000"
+    },
+    {
+      "id": "L3",
+      "sectionId": "SEC_CS101_02",
+      "teacherId": "T2",
+      "roomId": "R301",
+      "day": "MON",
+      "timeSlotId": "SLOT_1000"
+    },
+    {
+      "id": "L4",
+      "sectionId": "SEC_MATH201_01",
+      "teacherId": "T3",
+      "roomId": "R201",
+      "day": "TUE",
+      "timeSlotId": "SLOT_1130"
+    },
+    {
+      "id": "L5",
+      "sectionId": "SEC_DB202_01",
+      "teacherId": "T4",
+      "roomId": "LAB1",
+      "day": "WED",
+      "timeSlotId": "SLOT_0830"
+    },
+    {
+      "id": "L6",
+      "sectionId": "SEC_ENG110_01",
+      "teacherId": "T5",
+      "roomId": "R102",
+      "day": "THU",
+      "timeSlotId": "SLOT_1000"
+    },
+    {
+      "id": "L7",
+      "sectionId": "SEC_PHY150_01",
+      "teacherId": "T6",
+      "roomId": "HALL1",
+      "day": "FRI",
+      "timeSlotId": "SLOT_1300"
+    },
+    {
+      "id": "L8",
+      "sectionId": "SEC_CS205_01",
+      "teacherId": "T1",
+      "roomId": "LAB1",
+      "day": "TUE",
+      "timeSlotId": "SLOT_0830"
+    },
+    {
+      "id": "L9",
+      "sectionId": "SEC_MATH101_02",
+      "teacherId": "T3",
+      "roomId": "R201",
+      "day": "THU",
+      "timeSlotId": "SLOT_1130"
+    },
+    {
+      "id": "L10",
+      "sectionId": "SEC_HIS120_01",
+      "teacherId": "T5",
+      "roomId": "R301",
+      "day": "TUE",
+      "timeSlotId": "SLOT_1430"
+    }
+  ]
+}
