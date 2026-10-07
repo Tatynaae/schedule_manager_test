@@ -25,7 +25,7 @@ npm run build      # type-check + production build
 
 - **React 19 + TypeScript + Vite**
 - **TanStack Query** — загрузка данных из mock API (loading / error / retry)
-- **TanStack Store** — состояние занятий (с undo/redo и persistence) и UI-состояние (фильтры, выбор, тосты)
+- **TanStack Store** — состояние занятий (с undo/redo и persistence) и UI-состояние (фильтры, выбор секции, открытый редактор)
 - **TanStack Virtual** — виртуализированный список секций (сотни секций без просадок)
 - **TanStack Form** — редактор занятия (преподаватель, аудитория, день, время)
 - **Ant Design 6** (+ `@ant-design/icons`) — UI-компоненты: Input, Select, Segmented, Button, Tag, Progress, Modal, Form, Alert, Popconfirm, notification, Result, Spin, Empty; тема и русская локаль через `ConfigProvider`
